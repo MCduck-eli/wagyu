@@ -75,6 +75,15 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
     .menu-toggle {
         display: block;
         z-index: 1001;
@@ -84,7 +93,7 @@ body {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 100%;
         height: 100vh;
         background-color: #8b8b7a;
         display: flex;
@@ -97,8 +106,18 @@ body {
     }
 
     .nav-links li {
-        margin: 20px 0;
+        margin: 15px 0;
     }
+
+    .nav-links li a {
+        font-size: 18px;
+        opacity: 1;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
     #menu-bar:checked ~ .nav-links {
         right: 0;
     }
@@ -283,8 +302,11 @@ body {
 }
 
 @media (max-width: 992px) {
+    .video-section {
+        padding-top: 100px;
+    }
     .hero-player {
-        height: 40vh;
+        height: 50vh;
     }
 }
 
@@ -411,7 +433,10 @@ body {
         flex-direction: column;
     }
     .shop-info {
-        padding: 40px;
+        padding: 30px 20px;
+    }
+    .shop-image {
+        padding: 20px;
     }
 }
 
@@ -503,13 +528,17 @@ body {
 /* Mobile version */
 @media (max-width: 850px) {
     .contact-section {
-        height: 1000px;
+        height: auto;
+        padding: 40px 15px;
     }
     .contact-container {
         flex-direction: column;
     }
     .contact-info {
-        padding: 40px;
+        padding: 30px 20px;
+    }
+    .contact-map {
+        height: 300px;
     }
 }
 
@@ -594,10 +623,10 @@ body {
         flex-direction: column;
     }
     .stress-image {
-        height: 300px;
+        height: 250px;
     }
     .stress-info {
-        padding: 40px 30px;
+        padding: 30px 20px;
     }
 }
 
@@ -718,6 +747,9 @@ body {
 
 /* Mobile version */
 @media (max-width: 992px) {
+    .site-footer {
+        padding: 30px 15px;
+    }
     .powered-by {
         display: flex;
         justify-content: center;
@@ -725,14 +757,21 @@ body {
     .footer-container {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
+    }
+    .footer-center {
+        order: -1;
     }
     .footer-right {
         text-align: center;
+        width: 100%;
     }
     .footer-links {
         justify-content: center;
+        flex-wrap: wrap;
     }
     .copyright {
-        width: 400px;
+        width: 100%;
+        max-width: 100%;
     }
 }
