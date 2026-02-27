@@ -1,0 +1,362 @@
+body {
+    background-color: #8b8b7a;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Tierwohl */
+.tierwohl-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    text-align: center;
+}
+
+.tierwohl-header h2 {
+    color: white;
+    margin-top: 200px;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.tierwohl-header p {
+    color: #ede9de;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.tierwohl-card {
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    height: 700px;
+}
+
+.full-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- MOBILE VERSION --- */
+@media (max-width: 768px) {
+    .tierwohl-header h2 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    .tierwohl-header p {
+        font-size: 16px;
+    }
+    .tierwohl-card {
+        height: auto;
+    }
+}
+
+/* Verantwortung */
+.responsibility-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.responsibility-container {
+    background-color: #ede9de;
+    padding: 60px 80px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.responsibility-container h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.responsibility-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.responsibility-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- MOBILE VERSION --- */
+@media (max-width: 768px) {
+    .responsibility-container {
+        padding: 40px 25px;
+    }
+
+    .responsibility-container h2 {
+        font-size: 26px;
+    }
+
+    .responsibility-content p {
+        font-size: 16px;
+    }
+}
+
+/* Values */
+.values-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.value-card {
+    background-color: #ede9de;
+    padding: 40px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #8b8b7a;
+    color: #ede9de;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    font-size: 32px;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.value-card p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+}
+
+/* --- MOBILE VERSION --- */
+@media (max-width: 992px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        padding: 30px 15px;
+    }
+}
+
+/* Sthal */
+.sthal-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.sthal-card {
+    position: relative;
+    border-radius: 15px;
+    height: 600px;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sthal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.8);
+}
+
+.sthal-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.sthal-overlay h1 {
+    color: white;
+    font-size: clamp(24px, 6vw, 64px);
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* HALTUNG */
+.feeding-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.feeding-container {
+    display: flex;
+    background-color: #ede9de;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feeding-text {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feeding-text h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.feeding-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.feeding-text p:last-child {
+    margin-bottom: 0;
+}
+
+.feeding-image {
+    flex: 1;
+}
+
+.feeding-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .feeding-container {
+        flex-direction: column;
+    }
+    .feeding-text {
+        padding: 30px 20px;
+    }
+    .feeding-image {
+        height: 300px;
+    }
+    .sthal-card {
+        height: auto;
+    }
+}
+
+/* HOFSCHLACHTUNG */
+.slaughter-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.slaughter-container {
+    display: flex;
+    background-color: #ede9de;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slaughter-image {
+    flex: 1;
+}
+
+.slaughter-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slaughter-text {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slaughter-text h2 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.slaughter-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.slaughter-quote {
+    border-left: 3px solid #8b8b7a;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #555;
+    font-size: 15px;
+}
+
+.more-info-link {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.more-info-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .slaughter-container {
+        flex-direction: column;
+    }
+    .slaughter-image {
+        height: 300px;
+    }
+    .slaughter-text {
+        padding: 30px 20px;
+    }
+}

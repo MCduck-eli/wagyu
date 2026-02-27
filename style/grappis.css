@@ -1,0 +1,231 @@
+body {
+    background-color: #8b8b7a;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Greappis */
+.graeppis-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.graeppis-card {
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.graeppis-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.9);
+}
+
+.graeppis-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+}
+
+.graeppis-overlay h1 {
+    font-size: clamp(32px, 8vw, 72px);
+    font-weight: 800;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+.graeppis-overlay p {
+    font-size: clamp(16px, 2.5vw, 24px);
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .graeppis-overlay {
+        bottom: 15%;
+        left: 8%;
+    }
+    .graeppis-card {
+        margin-top: 100px;
+    }
+    .graeppis-image {
+        height: 300px;
+    }
+    .graeppis-overlay h1 {
+        margin-bottom: 25px;
+    }
+}
+
+/* History-portrait */
+.history-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.history-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.history-text {
+    flex: 1;
+    color: white;
+}
+
+.history-text h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.history-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.history-highlight {
+    font-weight: 700;
+    margin-top: 30px;
+    color: white !important;
+}
+
+.history-image {
+    flex: 1;
+}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .history-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .history-image {
+        order: -1;
+    }
+}
+
+/* philosophy */
+.philosophy-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+}
+
+.philosophy-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.philosophy-image {
+    flex: 1.2;
+}
+
+.philosophy-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.philosophy-card {
+    flex: 1;
+    background-color: #ede9de;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.philosophy-card h2 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.philosophy-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.philosophy-card p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .philosophy-container {
+        flex-direction: column;
+    }
+
+    .philosophy-card {
+        margin-top: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Gallery */
+.gallery-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    line-height: 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: auto;
+    }
+}

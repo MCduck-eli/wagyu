@@ -1,0 +1,134 @@
+body {
+    background-color: #a6a597;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* products */
+.products-gallery-section {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 200px;
+    gap: 15px;
+}
+
+.product-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.product-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.phone-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 100px;
+    }
+
+    .product-item img {
+        height: 180px;
+    }
+}
+
+/* shop-info */
+.shop-simple-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.shop-simple-section img {
+    width: 50px;
+    height: 20px;
+}
+.shop-simple-section a {
+    color: black;
+}
+.shop-simple-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.shop-btn-wrap {
+    margin: 25px 0;
+}
+.shop-btn-wrap a {
+    color: white;
+}
+
+.btn-online-shop {
+    display: inline-block;
+    background-color: #5d4d3f;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.agb-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.warning-text {
+    color: #ccaa00;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+small {
+    display: block;
+    color: black;
+    margin-bottom: 5px;
+}
+.swiss-flag {
+    font-size: 25px;
+}
+@media (max-width: 992px) {
+    .shop-simple-section {
+        padding: 0px 10px;
+    }
+    .warning-text {
+        font-size: 25px;
+    }
+}
