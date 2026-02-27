@@ -14,6 +14,10 @@
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             />
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+            />
         </head>
     </head>
     <body>
@@ -32,16 +36,41 @@
                     </label>
 
                     <ul class="nav-links">
-                        <li><a href="index.html">START</a></li>
-                        <li>
-                            <a href="wagyurind.html">BIO WAGYU RIND</a>
-                        </li>
-                        <li>
-                            <a href="tierwohl.html" class="active">TIERWOHL</a>
-                        </li>
-                        <li><a href="grappis.html">GRÄPPI'S</a></li>
-                        <li><a href="galerie.html">GALERIE</a></li>
-                        <li><a href="shop.html">SHOP</a></li>
+                        <ul class="nav-links">
+                            <li>
+                                <a href="index.html" data-i18n="nav_start"
+                                    >START</a
+                                >
+                            </li>
+                            <li>
+                                <a href="wagyurind.html" data-i18n="nav_wagyu"
+                                    >BIO WAGYU RIND</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="tierwohl.html"
+                                    class="active"
+                                    data-i18n="nav_wohl"
+                                    >TIERWOHL</a
+                                >
+                            </li>
+                            <li>
+                                <a href="grappis.html" data-i18n="nav_grappi"
+                                    >GRÄPPI'S</a
+                                >
+                            </li>
+                            <li>
+                                <a href="galerie.html" data-i18n="nav_galerie"
+                                    >GALERIE</a
+                                >
+                            </li>
+                            <li>
+                                <a href="shop.html" data-i18n="nav_shop"
+                                    >SHOP</a
+                                >
+                            </li>
+                        </ul>
                     </ul>
                     <div class="dropdown">
                         <input
@@ -82,8 +111,10 @@
         <!-- TIERWOHL -->
         <section class="tierwohl-section">
             <div class="tierwohl-header">
-                <h2>TIERWOHL</h2>
-                <p>Respektvolle Haltung von Anfang bis Ende</p>
+                <h2 data-i18n="tierwohl_title">TIERWOHL</h2>
+                <p data-i18n="tierwohl_subtitle">
+                    Respektvolle Haltung von Anfang bis Ende
+                </p>
             </div>
 
             <div class="tierwohl-card">
@@ -98,15 +129,15 @@
         <!-- Verantwortung -->
         <section class="responsibility-section">
             <div class="responsibility-container">
-                <h2>Unsere Verantwortung</h2>
+                <h2 data-i18n="resp_title">Unsere Verantwortung</h2>
                 <div class="responsibility-content">
-                    <p>
+                    <p data-i18n="resp_p1">
                         Tierwohl ist für uns keine Marketingfloskel, sondern
                         gelebte Praxis. Jeden Tag aufs Neue tragen wir die
                         Verantwortung für das Wohlergehen unserer Tiere – und
                         nehmen diese Aufgabe sehr ernst.
                     </p>
-                    <p>
+                    <p data-i18n="resp_p2">
                         Wir glauben daran, dass glückliche Tiere nicht nur ein
                         ethisches Gebot sind, sondern auch zu besserer
                         Fleischqualität führen. Stress und schlechte Haltung
@@ -125,32 +156,40 @@
                     <div class="icon-circle">
                         <i class="fa-regular fa-heart"></i>
                     </div>
-                    <h3>Respekt</h3>
-                    <p>Jedes Tier verdient Würde und achtsamen Umgang</p>
+                    <h3 data-i18n="val_respekt">Respekt</h3>
+                    <p data-i18n="val_respekt_desc">
+                        Jedes Tier verdient Würde und achtsamen Umgang
+                    </p>
                 </div>
 
                 <div class="value-card">
                     <div class="icon-circle">
                         <i class="fa-solid fa-house-chimney"></i>
                     </div>
-                    <h3>Artgerecht</h3>
-                    <p>Natürliche Bedürfnisse stehen im Mittelpunkt</p>
+                    <h3 data-i18n="val_artgerecht">Artgerecht</h3>
+                    <p data-i18n="val_artgerecht_desc">
+                        Natürliche Bedürfnisse stehen im Mittelpunkt
+                    </p>
                 </div>
 
                 <div class="value-card">
                     <div class="icon-circle">
                         <i class="fa-solid fa-seedling"></i>
                     </div>
-                    <h3>Nachhaltig</h3>
-                    <p>Im Einklang mit der Natur wirtschaften</p>
+                    <h3 data-i18n="val_nachhaltig">Nachhaltig</h3>
+                    <p data-i18n="val_nachhaltig_desc">
+                        Im Einklang mit der Natur wirtschaften
+                    </p>
                 </div>
 
                 <div class="value-card">
                     <div class="icon-circle">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3>Transparent</h3>
-                    <p>Offenheit über unsere Haltungsbedingungen</p>
+                    <h3 data-i18n="val_transparent">Transparent</h3>
+                    <p data-i18n="val_transparent_desc">
+                        Offenheit über unsere Haltungsbedingungen
+                    </p>
                 </div>
             </div>
         </section>
@@ -164,7 +203,7 @@
                     class="sthal-image"
                 />
                 <div class="sthal-overlay">
-                    <h1>LAUFSTALLHALTUNG</h1>
+                    <h1 data-i18n="sthal_title">LAUFSTALLHALTUNG</h1>
                 </div>
             </div>
         </section>
@@ -173,25 +212,25 @@
         <section class="feeding-section">
             <div class="feeding-container">
                 <div class="feeding-text">
-                    <h2>HALTUNG UND FÜTTERUNG</h2>
-                    <p>
+                    <h2 data-i18n="feeding_title">HALTUNG UND FÜTTERUNG</h2>
+                    <p data-i18n="feeding_p1">
                         Auf unserem Hof leben rund 40 Tiere, in einer ruhigen
                         und stabilen Herde, die jedes Jahr etwa 12 Kälber
                         hervorbringt. Wir halten sie in einer besonders
                         tierfreundlichen Stallhaltung (BTS), mit viel Licht,
                         viel Platz und einem Außenklimabereich.
                     </p>
-                    <p>
+                    <p data-i18n="feeding_p2">
                         Den Großteil des Jahres verbringen sie auf unseren 5
                         Hektaren Weideland. Gefüttert wird ausschließlich, was
                         unser Hof selbst produziert: Gras, Mais und Silage.
                     </p>
-                    <p>
+                    <p data-i18n="feeding_p3">
                         Wir arbeiten nach den strengen Bio-Knospe-Richtlinien,
                         die Tierwohl, Nachhaltigkeit und Transparenz in den
                         Mittelpunkt stellen.
                     </p>
-                    <p>
+                    <p data-i18n="feeding_p4">
                         Unsere Haltung ist bewusst extensiv – weniger Druck,
                         mehr Natur. Die Schlachttiere bleiben rund 36 Monate in
                         ihrer vertrauten Herde auf unserem Hof und werden erst
@@ -217,38 +256,46 @@
                     />
                 </div>
                 <div class="slaughter-text">
-                    <h2>HOFSCHLACHTUNG – DER LETZTE RESPEKT</h2>
-                    <p>
+                    <h2 data-i18n="slaughter_title">
+                        HOFSCHLACHTUNG – DER LETZTE RESPEKT
+                    </h2>
+                    <p data-i18n="slaughter_p1">
                         Bei der Hofschlachtung bleiben die Tiere in ihrer
                         vertrauten Umgebung – ohne Transport, ohne Stress.
                         Messungen zeigen deutlich tiefere Cortisolwerte als bei
                         herkömmlichen Schlachtungen.
                     </p>
-                    <p>
+                    <p data-i18n="slaughter_p2">
                         Das Tier bleibt ruhig, der Ablauf ist respektvoll und
                         transparent. Für den Menschen bedeutet das: weniger
                         Stresshormone im Fleisch, mehr Qualität und ein gutes
                         Gefühl.
                     </p>
-                    <p>
+                    <p data-i18n="slaughter_p3">
                         Hofschlachtung verbindet Tierwohl, Handwerk und
                         Vertrauen. Sie bleiben in ihrer gewohnten Umgebung und
                         werden dort von erfahrenen Fachleuten schnell und
                         respektvoll geschlachtet.
                     </p>
-                    <p>
+                    <p data-i18n="slaughter_p4">
                         Diese Methode minimiert Stress und Angst komplett. Das
                         Tier bleibt ruhig, kennt die Umgebung und wird nicht
                         durch fremde Gerüche, Geräusche oder andere Tiere
                         verängstigt.
                     </p>
 
-                    <blockquote class="slaughter-quote">
+                    <blockquote
+                        class="slaughter-quote"
+                        data-i18n="slaughter_quote"
+                    >
                         „Wir übernehmen Verantwortung vom ersten bis zum letzten
                         Moment. Das sind wir unseren Tieren schuldig.“
                     </blockquote>
 
-                    <a href="#" class="more-info-link"
+                    <a
+                        href="#"
+                        class="more-info-link"
+                        data-i18n="slaughter_link"
                         >Mehr Infos: Hofschlachtung (Schweiz)</a
                     >
                 </div>
@@ -260,7 +307,7 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <div class="powered-by">
-                        Shop powered by
+                        <span data-i18n="footer_powered">Shop powered by</span>
                         <img
                             src="/images/signature.png"
                             alt="signature"
@@ -268,8 +315,11 @@
                         />
                     </div>
                     <p class="footer-tagline">
-                        Nachbarschafts-Shopping in Realtime. swiss made
-                        <span class="swiss-flag">🇨🇭</span>
+                        <span data-i18n="footer_tagline"
+                            >Nachbarschafts-Shopping in Realtime. swiss
+                            made</span
+                        >
+                        <span class="swiss-flag"></span>
                     </p>
                 </div>
 
@@ -283,30 +333,36 @@
                         <a
                             href="https://www.facebook.com/biosuisse"
                             target="_blank"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
                         <a
                             href="https://www.instagram.com/bio_suisse/"
                             target="_blank"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="footer-right">
                     <div class="footer-links">
-                        <a href="#">Impressum/Datenschutz/AGB</a>
-                        <a href="#">Kontakt</a>
+                        <a href="#" data-i18n="footer_legal"
+                            >Impressum/Datenschutz/AGB</a
+                        >
+                        <a href="#" data-i18n="footer_contact">Kontakt</a>
                     </div>
                     <p class="copyright">
-                        © 2026 WAGYU Biohof Linde / Christian Gräppi |
-                        Realisation: openarena GmbH, Merzligen
+                        <span data-i18n="footer_copyright"
+                            >© 2026 WAGYU Biohof Linde / Christian Gräppi |
+                            Realisation: openarena GmbH, Merzligen</span
+                        >
                     </p>
                 </div>
             </div>
         </footer>
 
         <!-- JavScript -->
-        <script src="/script.js"></script>
+        <script src="/js/tierwohl.js"></script>
     </body>
 </html>

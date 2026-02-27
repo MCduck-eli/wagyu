@@ -8,6 +8,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+        />
         <link rel="stylesheet" href="/style/style.css" />
         <link rel="stylesheet" href="/style/shop.css" />
     </head>
@@ -27,18 +31,41 @@
                     </label>
 
                     <ul class="nav-links">
-                        <li><a href="index.html">START</a></li>
-                        <li>
-                            <a href="wagyurind.html">BIO WAGYU RIND</a>
-                        </li>
-                        <li><a href="tierwohl.html">TIERWOHL</a></li>
-                        <li>
-                            <a href="grappis.html">GRÄPPI'S</a>
-                        </li>
-                        <li>
-                            <a href="galerie.html">GALERIE</a>
-                        </li>
-                        <li><a href="shop.html" class="active">SHOP</a></li>
+                        <ul class="nav-links">
+                            <li>
+                                <a href="index.html" data-i18n="nav_start"
+                                    >START</a
+                                >
+                            </li>
+                            <li>
+                                <a href="wagyurind.html" data-i18n="nav_wagyu"
+                                    >BIO WAGYU RIND</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tierwohl.html" data-i18n="nav_wohl"
+                                    >TIERWOHL</a
+                                >
+                            </li>
+                            <li>
+                                <a href="grappis.html" data-i18n="nav_grappi"
+                                    >GRÄPPI'S</a
+                                >
+                            </li>
+                            <li>
+                                <a href="galerie.html" data-i18n="nav_galerie"
+                                    >GALERIE</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="shop.html"
+                                    class="active"
+                                    data-i18n="nav_shop"
+                                    >SHOP</a
+                                >
+                            </li>
+                        </ul>
                     </ul>
                     <div class="dropdown">
                         <input
@@ -99,26 +126,26 @@
 
         <!-- shop-info -->
         <section class="shop-simple-section">
-            <p>
+            <p data-i18n="shop_items_list">
                 Würste*, Hamburger*, Saftplätzli*, A-la-minute-Stücke*,
                 Hohrückensteaks*, Hackfleisch*, Geschnetzeltes*, Ragout*,
                 Steaks*, Filet*, Braten*.
             </p>
 
             <p>
-                <i
-                    >*Diese Stücke sind im Mischpaket enthalten.
+                <i data-i18n="shop_asterisk_note">
+                    *Diese Stücke sind im Mischpaket enthalten.
                     <a href="#">Einzel Stücke</a> auch separat erhältlich auf
-                    Anfrage.</i
-                >
+                    Anfrage.
+                </i>
             </p>
 
-            <p>
+            <p data-i18n="shop_separate_items">
                 Würste, Hamburger, Trockenfleisch und Trockenwürste auch separat
                 erhältlich.
             </p>
 
-            <p>
+            <p data-i18n="shop_package_desc">
                 Unsere 5-kg/10-kg-Mischpakete vereinen edle Stücke und
                 klassische Cuts in einer ausgewogenen Auswahl. Sie genießen
                 <u>ein attraktives Preis-Leistungs-Verhältnis</u> und entdecken
@@ -128,40 +155,44 @@
             </p>
 
             <p>
-                <strong
-                    >Das Fleisch ist vakuumiert, tiefgefroren und zur Abholung
-                    direkt am Hof bereit.</strong
-                >
+                <strong data-i18n="shop_storage_info">
+                    Das Fleisch ist vakuumiert, tiefgefroren und zur Abholung
+                    direkt am Hof bereit.
+                </strong>
             </p>
 
-            <p>Wir metzgen ca. 4x pro Jahr. Nächster Termin: M/J</p>
+            <p data-i18n="shop_slaughter_date">
+                Wir metzgen ca. 4x pro Jahr. Nächster Termin: M/J
+            </p>
 
             <div class="shop-btn-wrap">
                 <a
                     href="https://www.stuurm.com/splash"
                     class="btn-online-shop"
                     target="_blank"
+                    data-i18n="shop_button_text"
                     >ZUM ONLINE-SHOP</a
                 >
             </div>
 
             <p>
-                <small
-                    >Shop powered by
+                <small>
+                    <span data-i18n="footer_powered">Shop powered by</span>
                     <strong
-                        ><img
-                            src="/images/signature.png"
-                            alt="signature" /></strong
-                ></small>
+                        ><img src="/images/signature.png" alt="signature"
+                    /></strong>
+                </small>
             </p>
             <p>
-                <small
-                    >Nachbarschafts-Shopping in Realtime. swiss made
-                    <span class="swiss-flag">🇨🇭</span></small
-                >
+                <small>
+                    <span data-i18n="footer_tagline"
+                        >Nachbarschafts-Shopping in Realtime. swiss made</span
+                    >
+                    <span class="fi fi-ch"></span>
+                </small>
             </p>
 
-            <p>
+            <p data-i18n="shop_agb_text">
                 Hier können Sie jederzeit unsere
                 <a href="#">Allgemeinen Geschäftsbedingungen (AGB)</a> einsehen.
                 Mit dem Absenden der Bestellung gibt der Kunde eine verbindliche
@@ -170,14 +201,16 @@
 
             <div class="agb-row">
                 <input type="checkbox" id="agb-check" />
-                <label for="agb-check"
-                    >Ich habe die
+                <label for="agb-check" data-i18n="shop_agb_accept">
+                    Ich habe die
                     <a href="#">Allgemeinen Geschäftsbedingungen (AGB)</a>
-                    gelesen und akzeptiert.</label
-                >
+                    gelesen und akzeptiert.
+                </label>
             </div>
 
-            <h1 class="warning-text">PREISE NOCH KORRIGIEREN</h1>
+            <h1 class="warning-text" data-i18n="shop_warning">
+                PREISE NOCH KORRIGIEREN
+            </h1>
         </section>
 
         <!-- Footer -->
@@ -185,7 +218,7 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <div class="powered-by">
-                        Shop powered by
+                        <span data-i18n="footer_powered">Shop powered by</span>
                         <img
                             src="/images/signature.png"
                             alt="signature"
@@ -193,8 +226,11 @@
                         />
                     </div>
                     <p class="footer-tagline">
-                        Nachbarschafts-Shopping in Realtime. swiss made
-                        <span class="swiss-flag">🇨🇭</span>
+                        <span data-i18n="footer_tagline"
+                            >Nachbarschafts-Shopping in Realtime. swiss
+                            made</span
+                        >
+                        <span class="swiss-flag"></span>
                     </p>
                 </div>
 
@@ -208,30 +244,36 @@
                         <a
                             href="https://www.facebook.com/biosuisse"
                             target="_blank"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
                         <a
                             href="https://www.instagram.com/bio_suisse/"
                             target="_blank"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="footer-right">
                     <div class="footer-links">
-                        <a href="#">Impressum/Datenschutz/AGB</a>
-                        <a href="#">Kontakt</a>
+                        <a href="#" data-i18n="footer_legal"
+                            >Impressum/Datenschutz/AGB</a
+                        >
+                        <a href="#" data-i18n="footer_contact">Kontakt</a>
                     </div>
                     <p class="copyright">
-                        © 2026 WAGYU Biohof Linde / Christian Gräppi |
-                        Realisation: openarena GmbH, Merzligen
+                        <span data-i18n="footer_copyright"
+                            >© 2026 WAGYU Biohof Linde / Christian Gräppi |
+                            Realisation: openarena GmbH, Merzligen</span
+                        >
                     </p>
                 </div>
             </div>
         </footer>
 
         <!-- JavScript -->
-        <script src="/script.js"></script>
+        <script src="/js/shop.js"></script>
     </body>
 </html>

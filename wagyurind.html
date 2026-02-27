@@ -8,6 +8,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+        />
         <link rel="stylesheet" href="/style/style.css" />
         <link rel="stylesheet" href="/style/wagyu.css" />
     </head>
@@ -27,16 +31,35 @@
                     </label>
 
                     <ul class="nav-links">
-                        <li><a href="index.html">START</a></li>
                         <li>
-                            <a href="wagyu.html" class="active"
+                            <a href="index.html" data-i18n="nav_start">START</a>
+                        </li>
+                        <li>
+                            <a
+                                href="wagyurind.html"
+                                class="active"
+                                data-i18n="nav_wagyu"
                                 >BIO WAGYU RIND</a
                             >
                         </li>
-                        <li><a href="tierwohl.html">TIERWOHL</a></li>
-                        <li><a href="grappis.html">GRÄPPI'S</a></li>
-                        <li><a href="galerie.html">GALERIE</a></li>
-                        <li><a href="shop.html">SHOP</a></li>
+                        <li>
+                            <a href="tierwohl.html" data-i18n="nav_wohl"
+                                >TIERWOHL</a
+                            >
+                        </li>
+                        <li>
+                            <a href="grappis.html" data-i18n="nav_grappi"
+                                >GRÄPPI'S</a
+                            >
+                        </li>
+                        <li>
+                            <a href="galerie.html" data-i18n="nav_galerie"
+                                >GALERIE</a
+                            >
+                        </li>
+                        <li>
+                            <a href="shop.html" data-i18n="nav_shop">SHOP</a>
+                        </li>
                     </ul>
                     <div class="dropdown">
                         <input
@@ -83,8 +106,8 @@
                     class="hero-image"
                 />
                 <div class="hero-text-overlay">
-                    <h1>BIO WAGYU RIND</h1>
-                    <p>
+                    <h1 data-i18n="card_title">BIO WAGYU RIND</h1>
+                    <p data-i18n="card_desc">
                         Edle Genetik, regionale Wurzeln – das Beste aus zwei
                         Welten
                     </p>
@@ -97,8 +120,8 @@
         <section class="breeding-section">
             <div class="breeding-container">
                 <div class="breeding-text">
-                    <h2>ZUCHT & HALTUNG</h2>
-                    <p>
+                    <h2 data-i18n="breeding_title">ZUCHT & HALTUNG</h2>
+                    <p data-i18n="breeding_desc">
                         Unsere Bio Wagyu-Rinder verbinden japanische Genetik mit
                         robusten Schweizer Rassen. Das Ergebnis: Tiere, die
                         perfekt an unser Klima angepasst sind und Fleisch mit
@@ -124,8 +147,8 @@
                     />
                 </div>
                 <div class="quality-text">
-                    <h2>QUALITÄT & GENUSS</h2>
-                    <p>
+                    <h2 data-i18n="quality_title">QUALITÄT & GENUSS</h2>
+                    <p data-i18n="quality_desc">
                         Das fein marmorierte Fleisch unserer Wagyu-Rinder steht
                         für höchste Qualität. Die intramuskuläre Fetteinlagerung
                         sorgt für unvergleichliche Zartheit und einen
@@ -142,7 +165,7 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <div class="powered-by">
-                        Shop powered by
+                        <span data-i18n="footer_powered">Shop powered by</span>
                         <img
                             src="/images/signature.png"
                             alt="signature"
@@ -150,8 +173,11 @@
                         />
                     </div>
                     <p class="footer-tagline">
-                        Nachbarschafts-Shopping in Realtime. swiss made
-                        <span class="swiss-flag">🇨🇭</span>
+                        <span data-i18n="footer_tagline"
+                            >Nachbarschafts-Shopping in Realtime. swiss
+                            made</span
+                        >
+                        <span class="swiss-flag"></span>
                     </p>
                 </div>
 
@@ -165,30 +191,36 @@
                         <a
                             href="https://www.facebook.com/biosuisse"
                             target="_blank"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
                         <a
                             href="https://www.instagram.com/bio_suisse/"
                             target="_blank"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="footer-right">
                     <div class="footer-links">
-                        <a href="#">Impressum/Datenschutz/AGB</a>
-                        <a href="#">Kontakt</a>
+                        <a href="#" data-i18n="footer_legal"
+                            >Impressum/Datenschutz/AGB</a
+                        >
+                        <a href="#" data-i18n="footer_contact">Kontakt</a>
                     </div>
                     <p class="copyright">
-                        © 2026 WAGYU Biohof Linde / Christian Gräppi |
-                        Realisation: openarena GmbH, Merzligen
+                        <span data-i18n="footer_copyright"
+                            >© 2026 WAGYU Biohof Linde / Christian Gräppi |
+                            Realisation: openarena GmbH, Merzligen</span
+                        >
                     </p>
                 </div>
             </div>
         </footer>
 
         <!-- JavScript -->
-        <script src="/script.js"></script>
+        <script src="/js/wagyurind.js"></script>
     </body>
 </html>

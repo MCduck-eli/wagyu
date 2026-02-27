@@ -121,9 +121,7 @@ small {
     color: black;
     margin-bottom: 5px;
 }
-.swiss-flag {
-    font-size: 25px;
-}
+
 @media (max-width: 992px) {
     .shop-simple-section {
         padding: 0px 10px;

@@ -717,9 +717,6 @@ body {
     justify-content: flex-end;
     gap: 25px;
 }
-.swiss-flag {
-    font-size: 25px;
-}
 
 .footer-links a {
     color: #e5dfd0;

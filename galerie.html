@@ -8,6 +8,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+        />
         <link rel="stylesheet" href="/style/style.css" />
         <link rel="stylesheet" href="/style/galerie.css" />
     </head>
@@ -27,18 +31,41 @@
                     </label>
 
                     <ul class="nav-links">
-                        <li><a href="index.html">START</a></li>
-                        <li>
-                            <a href="wagyurind.html">BIO WAGYU RIND</a>
-                        </li>
-                        <li><a href="tierwohl.html">TIERWOHL</a></li>
-                        <li>
-                            <a href="grappis.html">GRÄPPI'S</a>
-                        </li>
-                        <li>
-                            <a href="galerie.html" class="active">GALERIE</a>
-                        </li>
-                        <li><a href="shop.html">SHOP</a></li>
+                        <ul class="nav-links">
+                            <li>
+                                <a href="index.html" data-i18n="nav_start"
+                                    >START</a
+                                >
+                            </li>
+                            <li>
+                                <a href="wagyurind.html" data-i18n="nav_wagyu"
+                                    >BIO WAGYU RIND</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tierwohl.html" data-i18n="nav_wohl"
+                                    >TIERWOHL</a
+                                >
+                            </li>
+                            <li>
+                                <a href="grappis.html" data-i18n="nav_grappi"
+                                    >GRÄPPI'S</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="galerie.html"
+                                    class="active"
+                                    data-i18n="nav_galerie"
+                                    >GALERIE</a
+                                >
+                            </li>
+                            <li>
+                                <a href="shop.html" data-i18n="nav_shop"
+                                    >SHOP</a
+                                >
+                            </li>
+                        </ul>
                     </ul>
                     <div class="dropdown">
                         <input
@@ -79,8 +106,10 @@
         <!-- GALERIE -->
         <section class="video-gallery">
             <div class="gallery-header">
-                <h2>GALERIE</h2>
-                <p>Einblicke in unser Leben auf dem Biohof</p>
+                <h2 data-i18n="gallery_title">GALERIE</h2>
+                <p data-i18n="gallery_subtitle">
+                    Einblicke in unser Leben auf dem Biohof
+                </p>
             </div>
             <div class="video-grid">
                 <div class="video-item">
@@ -112,15 +141,20 @@
                     <a href="#img1" class="gallery-card">
                         <img src="/images/greappis.png" alt="Farm View" />
                         <div class="card-overlay">
-                            <h3>Luftaufnahme Biohof Linde</h3>
-                            <p>Hof</p>
+                            <h3 data-i18n="gal_img1_title">
+                                Luftaufnahme Biohof Linde
+                            </h3>
+                            <p data-i18n="gal_cat_hof">Hof</p>
                         </div>
                     </a>
                     <div id="img1" class="lightbox">
                         <a href="#!" class="close-btn">&times;</a>
                         <div class="lightbox-content">
                             <img src="/images/greappis.png" />
-                            <div class="lightbox-caption">
+                            <div
+                                class="lightbox-caption"
+                                data-i18n="gal_img1_caption"
+                            >
                                 Luftaufnahme Biohof Linde - Hof
                             </div>
                         </div>
@@ -132,15 +166,18 @@
                     <a href="#img2" class="gallery-card">
                         <img src="/images/donkey.png" alt="Gräppi's Esel" />
                         <div class="card-overlay">
-                            <h3>Gräppi's Esel</h3>
-                            <p>Tiere</p>
+                            <h3 data-i18n="gal_img2_title">Gräppi's Esel</h3>
+                            <p data-i18n="gal_cat_tiere">Tiere</p>
                         </div>
                     </a>
                     <div id="img2" class="lightbox">
                         <a href="#!" class="close-btn">&times;</a>
                         <div class="lightbox-content">
                             <img src="/images/donkey.png" />
-                            <div class="lightbox-caption">
+                            <div
+                                class="lightbox-caption"
+                                data-i18n="gal_img2_caption"
+                            >
                                 Gräppi's Esel - Tiere
                             </div>
                         </div>
@@ -155,15 +192,20 @@
                             alt="Christian Gräppi"
                         />
                         <div class="card-overlay">
-                            <h3>Chrigu bei der Arbeit</h3>
-                            <p>Hof</p>
+                            <h3 data-i18n="gal_img3_title">
+                                Chrigu bei der Arbeit
+                            </h3>
+                            <p data-i18n="gal_cat_hof">Hof</p>
                         </div>
                     </a>
                     <div id="img3" class="lightbox">
                         <a href="#!" class="close-btn">&times;</a>
                         <div class="lightbox-content">
                             <img src="/images/history-portrait.png" />
-                            <div class="lightbox-caption">
+                            <div
+                                class="lightbox-caption"
+                                data-i18n="gal_img3_caption"
+                            >
                                 Chrigu bei der Arbeit - Hof
                             </div>
                         </div>
@@ -175,15 +217,20 @@
                     <a href="#img4" class="gallery-card">
                         <img src="/images/nature.png" alt="Wagyu Cows" />
                         <div class="card-overlay">
-                            <h3>Sonnenuntergang über den Feldern</h3>
-                            <p>Hof</p>
+                            <h3 data-i18n="gal_img4_title">
+                                Sonnenuntergang über den Feldern
+                            </h3>
+                            <p data-i18n="gal_cat_hof">Hof</p>
                         </div>
                     </a>
                     <div id="img4" class="lightbox">
                         <a href="#!" class="close-btn">&times;</a>
                         <div class="lightbox-content">
                             <img src="/images/nature.png" />
-                            <div class="lightbox-caption">
+                            <div
+                                class="lightbox-caption"
+                                data-i18n="gal_img4_caption"
+                            >
                                 Sonnenuntergang über den Feldern - Hof
                             </div>
                         </div>
@@ -195,15 +242,20 @@
                     <a href="#img5" class="gallery-card">
                         <img src="/images/heuerente.png" alt="Tractor View" />
                         <div class="card-overlay">
-                            <h3>Heuernte</h3>
-                            <p>Hof</p>
+                            <h3 data-i18n="gal_img5_title">Heuernte</h3>
+                            <p data-i18n="gal_cat_hof">Hof</p>
                         </div>
                     </a>
                     <div id="img5" class="lightbox">
                         <a href="#!" class="close-btn">&times;</a>
                         <div class="lightbox-content">
                             <img src="/images/heuerente.png" />
-                            <div class="lightbox-caption">Heuernte - Hof</div>
+                            <div
+                                class="lightbox-caption"
+                                data-i18n="gal_img5_caption"
+                            >
+                                Heuernte - Hof
+                            </div>
                         </div>
                         <a href="#!" class="lightbox-bg"></a>
                     </div>
@@ -213,15 +265,20 @@
                     <a href="#img6" class="gallery-card">
                         <img src="/images/pile.png" alt="Meat Close-up" />
                         <div class="card-overlay">
-                            <h3>Neugeborenes Wagyu Kalb</h3>
-                            <p>Tiere</p>
+                            <h3 data-i18n="gal_img6_title">
+                                Neugeborenes Wagyu Kalb
+                            </h3>
+                            <p data-i18n="gal_cat_tiere">Tiere</p>
                         </div>
                     </a>
                     <div id="img6" class="lightbox">
                         <a href="#!" class="close-btn">&times;</a>
                         <div class="lightbox-content">
                             <img src="/images/pile.png" />
-                            <div class="lightbox-caption">
+                            <div
+                                class="lightbox-caption"
+                                data-i18n="gal_img6_caption"
+                            >
                                 Neugeborenes Wagyu Kalb - Tiere
                             </div>
                         </div>
@@ -234,18 +291,21 @@
         <!-- visit -->
         <section class="visit-section">
             <div class="visit-card">
-                <h2>Besuchen Sie uns</h2>
-                <p class="visit-intro">
+                <h2 data-i18n="visit_title">Besuchen Sie uns</h2>
+                <p class="visit-intro" data-i18n="visit_intro">
                     Sie möchten unseren Hof persönlich kennenlernen? Wir freuen
                     uns über Ihren Besuch!
                 </p>
-                <p class="visit-details">
+                <p class="visit-details" data-i18n="visit_details">
                     Nach vorheriger Absprache zeigen wir Ihnen gerne, wie unsere
                     Tiere leben und wie wir arbeiten. Erleben Sie selbst die
                     Atmosphäre auf unserem Biohof und überzeugen Sie sich von
                     unserer artgerechten Tierhaltung.
                 </p>
-                <a href="mailto:info@biohof-linde.ch" class="contact-button"
+                <a
+                    href="mailto:info@biohof-linde.ch"
+                    class="contact-button"
+                    data-i18n="visit_btn"
                     >Kontakt aufnehmen</a
                 >
             </div>
@@ -256,7 +316,7 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <div class="powered-by">
-                        Shop powered by
+                        <span data-i18n="footer_powered">Shop powered by</span>
                         <img
                             src="/images/signature.png"
                             alt="signature"
@@ -264,8 +324,11 @@
                         />
                     </div>
                     <p class="footer-tagline">
-                        Nachbarschafts-Shopping in Realtime. swiss made
-                        <span class="swiss-flag">🇨🇭</span>
+                        <span data-i18n="footer_tagline"
+                            >Nachbarschafts-Shopping in Realtime. swiss
+                            made</span
+                        >
+                        <span class="swiss-flag"></span>
                     </p>
                 </div>
 
@@ -279,30 +342,36 @@
                         <a
                             href="https://www.facebook.com/biosuisse"
                             target="_blank"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
                         <a
                             href="https://www.instagram.com/bio_suisse/"
                             target="_blank"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="footer-right">
                     <div class="footer-links">
-                        <a href="#">Impressum/Datenschutz/AGB</a>
-                        <a href="#">Kontakt</a>
+                        <a href="#" data-i18n="footer_legal"
+                            >Impressum/Datenschutz/AGB</a
+                        >
+                        <a href="#" data-i18n="footer_contact">Kontakt</a>
                     </div>
                     <p class="copyright">
-                        © 2026 WAGYU Biohof Linde / Christian Gräppi |
-                        Realisation: openarena GmbH, Merzligen
+                        <span data-i18n="footer_copyright"
+                            >© 2026 WAGYU Biohof Linde / Christian Gräppi |
+                            Realisation: openarena GmbH, Merzligen</span
+                        >
                     </p>
                 </div>
             </div>
         </footer>
 
         <!-- JavScript -->
-        <script src="/script.js"></script>
+        <script src="/js/galerie.js"></script>
     </body>
 </html>

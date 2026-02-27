@@ -12,6 +12,10 @@
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             />
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+            />
             <link rel="stylesheet" href="/style/style.css" />
             <link rel="stylesheet" href="/style/grappis.css" />
         </head>
@@ -32,16 +36,41 @@
                     </label>
 
                     <ul class="nav-links">
-                        <li><a href="index.html">START</a></li>
-                        <li>
-                            <a href="wagyurind.html">BIO WAGYU RIND</a>
-                        </li>
-                        <li><a href="tierwohl.html">TIERWOHL</a></li>
-                        <li>
-                            <a href="graeppis.html" class="active">GRÄPPI'S</a>
-                        </li>
-                        <li><a href="galerie.html">GALERIE</a></li>
-                        <li><a href="shop.html">SHOP</a></li>
+                        <ul class="nav-links">
+                            <li>
+                                <a href="index.html" data-i18n="nav_start"
+                                    >START</a
+                                >
+                            </li>
+                            <li>
+                                <a href="wagyurind.html" data-i18n="nav_wagyu"
+                                    >BIO WAGYU RIND</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tierwohl.html" data-i18n="nav_wohl"
+                                    >TIERWOHL</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="grappis.html"
+                                    class="active"
+                                    data-i18n="nav_grappi"
+                                    >GRÄPPI'S</a
+                                >
+                            </li>
+                            <li>
+                                <a href="galerie.html" data-i18n="nav_galerie"
+                                    >GALERIE</a
+                                >
+                            </li>
+                            <li>
+                                <a href="shop.html" data-i18n="nav_shop"
+                                    >SHOP</a
+                                >
+                            </li>
+                        </ul>
                     </ul>
                     <div class="dropdown">
                         <input
@@ -88,8 +117,10 @@
                     class="graeppis-image"
                 />
                 <div class="graeppis-overlay">
-                    <h1>GRÄPPI'S</h1>
-                    <p>Die Menschen hinter dem Biohof</p>
+                    <h1 data-i18n="grappi_title">GRÄPPI'S</h1>
+                    <p data-i18n="grappi_subtitle">
+                        Die Menschen hinter dem Biohof
+                    </p>
                 </div>
             </div>
         </section>
@@ -98,22 +129,26 @@
         <section class="history-section">
             <div class="history-container">
                 <div class="history-text">
-                    <h2>UNSERE GESCHICHTE</h2>
-                    <p>
+                    <h2 data-i18n="history_title">UNSERE GESCHICHTE</h2>
+                    <p data-i18n="history_p1">
                         Ich führe einen Familienbetrieb, der seit Generationen
                         weitergegeben wird.
                     </p>
-                    <p>2002 habe ich den Hof von meinem Vater übernommen.</p>
-                    <p>
+                    <p data-i18n="history_p2">
+                        2002 habe ich den Hof von meinem Vater übernommen.
+                    </p>
+                    <p data-i18n="history_p3">
                         2014 kam der Gemüsebau dazu, und 2016 stellte ich den
                         ganzen Betrieb auf Bio um.
                     </p>
-                    <p>
+                    <p data-i18n="history_p4">
                         2017 entschied ich mich für die Mutterkuhhaltung mit
                         Wagyu-Rindern.
                     </p>
-                    <p>2025 habe ich den Gemüsebau beendet.</p>
-                    <p class="history-highlight">
+                    <p data-i18n="history_p5">
+                        2025 habe ich den Gemüsebau beendet.
+                    </p>
+                    <p class="history-highlight" data-i18n="history_highlight">
                         Heute steht der Hof für klare, einfache Grundsätze:
                         Respekt gegenüber den Tieren und eine Landwirtschaft,
                         die zu mir passt.
@@ -138,15 +173,15 @@
                     />
                 </div>
                 <div class="philosophy-card">
-                    <h2>UNSERE PHILOSOPHIE</h2>
-                    <p>
+                    <h2 data-i18n="philo_title">UNSERE PHILOSOPHIE</h2>
+                    <p data-i18n="philo_p1">
                         Für uns steht der respektvolle Umgang mit Tier, Natur
                         und Kunde im Mittelpunkt. Wir glauben an Transparenz,
                         kurze Wege und ehrliche Produkte. Jedes Tier auf unserem
                         Hof hat einen Namen und bekommt die Zeit, die es
                         braucht.
                     </p>
-                    <p>
+                    <p data-i18n="philo_p2">
                         Diese Haltung spiegelt sich in jedem Stück Fleisch
                         wider, das wir verkaufen. Regional, bio und mit Herz –
                         das ist unsere Überzeugung.
@@ -178,7 +213,7 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <div class="powered-by">
-                        Shop powered by
+                        <span data-i18n="footer_powered">Shop powered by</span>
                         <img
                             src="/images/signature.png"
                             alt="signature"
@@ -186,8 +221,11 @@
                         />
                     </div>
                     <p class="footer-tagline">
-                        Nachbarschafts-Shopping in Realtime. swiss made
-                        <span class="swiss-flag">🇨🇭</span>
+                        <span data-i18n="footer_tagline"
+                            >Nachbarschafts-Shopping in Realtime. swiss
+                            made</span
+                        >
+                        <span class="swiss-flag"></span>
                     </p>
                 </div>
 
@@ -201,30 +239,36 @@
                         <a
                             href="https://www.facebook.com/biosuisse"
                             target="_blank"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
                         <a
                             href="https://www.instagram.com/bio_suisse/"
                             target="_blank"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="footer-right">
                     <div class="footer-links">
-                        <a href="#">Impressum/Datenschutz/AGB</a>
-                        <a href="#">Kontakt</a>
+                        <a href="#" data-i18n="footer_legal"
+                            >Impressum/Datenschutz/AGB</a
+                        >
+                        <a href="#" data-i18n="footer_contact">Kontakt</a>
                     </div>
                     <p class="copyright">
-                        © 2026 WAGYU Biohof Linde / Christian Gräppi |
-                        Realisation: openarena GmbH, Merzligen
+                        <span data-i18n="footer_copyright"
+                            >© 2026 WAGYU Biohof Linde / Christian Gräppi |
+                            Realisation: openarena GmbH, Merzligen</span
+                        >
                     </p>
                 </div>
             </div>
         </footer>
 
         <!-- JavScript -->
-        <script src="/script.js"></script>
+        <script src="/js/grappis.js"></script>
     </body>
 </html>

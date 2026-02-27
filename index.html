@@ -12,6 +12,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+        />
         <link rel="stylesheet" href="/style/style.css" />
     </head>
     <body>
@@ -30,12 +34,41 @@
                     </label>
 
                     <ul class="nav-links">
-                        <li><a href="index.html" class="active">START</a></li>
-                        <li><a href="wagyurind.html">BIO WAGYU RIND</a></li>
-                        <li><a href="tierwohl.html">TIERWOHL</a></li>
-                        <li><a href="grappis.html">GRÄPPI'S</a></li>
-                        <li><a href="galerie.html">GALERIE</a></li>
-                        <li><a href="shop.html">SHOP</a></li>
+                        <ul class="nav-links">
+                            <li>
+                                <a
+                                    href="index.html"
+                                    class="active"
+                                    data-i18n="nav_start"
+                                    >START</a
+                                >
+                            </li>
+                            <li>
+                                <a href="wagyurind.html" data-i18n="nav_wagyu"
+                                    >BIO WAGYU RIND</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tierwohl.html" data-i18n="nav_wohl"
+                                    >TIERWOHL</a
+                                >
+                            </li>
+                            <li>
+                                <a href="grappis.html" data-i18n="nav_grappi"
+                                    >GRÄPPI'S</a
+                                >
+                            </li>
+                            <li>
+                                <a href="galerie.html" data-i18n="nav_galerie"
+                                    >GALERIE</a
+                                >
+                            </li>
+                            <li>
+                                <a href="shop.html" data-i18n="nav_shop"
+                                    >SHOP</a
+                                >
+                            </li>
+                        </ul>
                     </ul>
                     <div class="dropdown">
                         <input
@@ -83,7 +116,9 @@
 
                 <div class="hero__overlay"></div>
                 <div class="hero__content">
-                    <h1 class="hero__title">Aus respektvoller Biohaltung</h1>
+                    <h1 class="hero__title" data-i18n="hero_title">
+                        Aus respektvoller Biohaltung
+                    </h1>
                 </div>
 
                 <div class="player-controls">
@@ -112,27 +147,39 @@
                 </div>
 
                 <div class="shop-info">
-                    <h2 class="shop-title">DIREKT VERKAUF AB HOF - ZUM SHOP</h2>
+                    <h2 class="shop-title" data-i18n="shop_title">
+                        DIREKT VERKAUF AB HOF - ZUM SHOP
+                    </h2>
 
-                    <p class="shop-description">
+                    <p class="shop-description" data-i18n="shop_description">
                         Unsere 5-6kg/10+kg Mischpakete: edle Stücke, klassische
                         Cuts; voller Geschmack und mit echter Wertschätzung für
                         das ganze Tier.
                     </p>
 
-                    <p class="customer-say">
+                    <p class="customer-say" data-i18n="customer_say">
                         Das haben unsere Kundinnen und Kunden gesagt
                         (Karussel?):
                     </p>
 
                     <ul class="feedback-links">
-                        <li><span class="arrow">→</span> Kundenfeedback 1</li>
-                        <li><span class="arrow">→</span> Kundenfeedback 2</li>
-                        <li><span class="arrow">→</span> Kundenfeedback 3</li>
+                        <li>
+                            <span class="arrow">→</span>
+                            <span data-i18n="feedback_1">Kundenfeedback 1</span>
+                        </li>
+                        <li>
+                            <span class="arrow">→</span>
+                            <span data-i18n="feedback_2">Kundenfeedback 2</span>
+                        </li>
+                        <li>
+                            <span class="arrow">→</span>
+                            <span data-i18n="feedback_3">Kundenfeedback 3</span>
+                        </li>
                     </ul>
 
                     <a href="#" class="shop-button">
-                        ZUM SHOP <span class="external-icon">↗</span>
+                        <span data-i18n="shop_button_text">ZUM SHOP</span>
+                        <span class="external-icon">↗</span>
                     </a>
                 </div>
             </div>
@@ -143,14 +190,18 @@
         <section class="contact-section">
             <div class="contact-container">
                 <div class="contact-info">
-                    <h2 class="contact-title">KONTAKT</h2>
-                    <p class="contact-subtitle">
+                    <h2 class="contact-title" data-i18n="contact_title">
+                        KONTAKT
+                    </h2>
+                    <p class="contact-subtitle" data-i18n="contact_subtitle">
                         Bei Fragen sind wir gerne für Sie da
                     </p>
 
                     <div class="contact-details">
                         <h3 class="farm-name">BIOHOF LINDE</h3>
-                        <p class="owner-name">Christian GRÄPPI</p>
+                        <p class="owner-name" data-i18n="owner_name">
+                            Christian GRÄPPI
+                        </p>
 
                         <div class="contact-item">
                             <span class="material-symbols-outlined icon-thin"
@@ -174,7 +225,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="contact-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.5645347268875!2d7.243572876884021!3d47.10071372332612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e19278297b77b%3A0x6a94a20b784a928e!2sSt.%20Niklausgasse%2011%2C%203274%20Merzligen%2C%20Switzerland!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
@@ -199,19 +249,23 @@
                 </div>
 
                 <div class="stress-info">
-                    <h2 class="stress-title">STRESSFREIE VOM HOF</h2>
+                    <h2 class="stress-title" data-i18n="stress_title">
+                        STRESSFREIE VOM HOF
+                    </h2>
 
-                    <p class="stress-description">
+                    <p class="stress-description" data-i18n="stress_desc_1">
                         Die Hofschlachtung bedeutet, die Verantwortung bis zum
                         letzten Handgriff zu übernehmen.
                     </p>
 
-                    <p class="stress-description">
+                    <p class="stress-description" data-i18n="stress_desc_2">
                         Dabei entsteht Fleisch aus Respekt – nicht aus Stress.
                     </p>
 
                     <a href="#" class="more-info-link">
-                        Mehr Info über unser Verarbeitungspartner
+                        <span data-i18n="more_info_text"
+                            >Mehr Info über unser Verarbeitungspartner</span
+                        >
                         <span class="arrow">→</span>
                     </a>
                 </div>
@@ -223,7 +277,7 @@
             <div class="footer-container">
                 <div class="footer-left">
                     <div class="powered-by">
-                        Shop powered by
+                        <span data-i18n="footer_powered">Shop powered by</span>
                         <img
                             src="/images/signature.png"
                             alt="signature"
@@ -231,8 +285,11 @@
                         />
                     </div>
                     <p class="footer-tagline">
-                        Nachbarschafts-Shopping in Realtime. swiss made
-                        <span class="swiss-flag">🇨🇭</span>
+                        <span data-i18n="footer_tagline"
+                            >Nachbarschafts-Shopping in Realtime. swiss
+                            made</span
+                        >
+                        <span class="swiss-flag"></span>
                     </p>
                 </div>
 
@@ -246,27 +303,36 @@
                         <a
                             href="https://www.facebook.com/biosuisse"
                             target="_blank"
-                            ><i class="fa-brands fa-facebook-f"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
                         <a
                             href="https://www.instagram.com/bio_suisse/"
                             target="_blank"
-                            ><i class="fa-brands fa-instagram"></i
-                        ></a>
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
 
                 <div class="footer-right">
                     <div class="footer-links">
-                        <a href="#">Impressum/Datenschutz/AGB</a>
-                        <a href="#">Kontakt</a>
+                        <a href="#" data-i18n="footer_legal"
+                            >Impressum/Datenschutz/AGB</a
+                        >
+                        <a href="#" data-i18n="footer_contact">Kontakt</a>
                     </div>
                     <p class="copyright">
-                        © 2026 WAGYU Biohof Linde / Christian Gräppi |
-                        Realisation: openarena GmbH, Merzligen
+                        <span data-i18n="footer_copyright"
+                            >© 2026 WAGYU Biohof Linde / Christian Gräppi |
+                            Realisation: openarena GmbH, Merzligen</span
+                        >
                     </p>
                 </div>
             </div>
         </footer>
+
+        <!-- JavaScript -->
+        <script src="js/index.js"></script>
     </body>
 </html>
