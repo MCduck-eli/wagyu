@@ -209,6 +209,70 @@ body {
     transform: rotate(-135deg);
     margin-bottom: -4px;
 }
+/* Mobile version */
+@media (max-width: 768px) {
+    .navbar {
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px; /* Navbar balandligi bilan bir xil */
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #8b8b7a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 50px;
+        transition: 0.5s ease;
+        z-index: 1000;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+        opacity: 1;
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    #menu-bar:checked ~ .nav-links {
+        right: 0;
+    }
+
+    #menu-bar:checked ~ .menu-toggle .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-bar:checked ~ .menu-toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-bar:checked ~ .menu-toggle .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
 /* Hero */
 .video-section {
     background-color: #8b8b7a;
